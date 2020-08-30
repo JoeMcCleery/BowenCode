@@ -3,7 +3,7 @@
     <div class="uk-section uk-section-primary uk-light header">
       <div class="uk-container uk-text-center">
         <h1>
-          Say Hi
+          Blog
         </h1>
       </div>
     </div>
