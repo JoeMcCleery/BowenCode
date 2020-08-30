@@ -9,6 +9,8 @@ $global-primary-background: $brand-purple-i;
 $global-default-background: $brand-colour;
 $section-default-background: $brand-colour;
 
+$offcanvas-bar-background: $brand-purple-i;
+$navbar-background: $brand-purple-i;
 $navbar-nav-item-height: 80px;
 
 // 2. Import default variables and available mixins.
@@ -16,7 +18,9 @@ $navbar-nav-item-height: 80px;
 @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-//@mixin hook-card() { color: #000; }
+@mixin hook-offcanvas-bar() {
+  @extend .uk-box-shadow-small;
+}
 
 // 4. Import UIkit.
 @import "../../node_modules/uikit/src/scss/uikit-theme.scss";

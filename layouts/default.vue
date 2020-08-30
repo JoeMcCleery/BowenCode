@@ -41,4 +41,15 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+.header {
+  height: 300px;
+
+  > div {
+    height: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+}
 </style>

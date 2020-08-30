@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="uk-section uk-section-primary uk-light header">
-      <div class="uk-container uk-text-center uk-flex uk-flex-center">
+      <div class="uk-container uk-text-center">
         <h1>
           Robert Bowen's<br/>
           <span>
@@ -97,17 +97,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 h1 {
   line-height: 0.7;
 
   span {
     font-size: 0.6em;
   }
-}
-
-.header {
-  max-height: 250px;
-  height: 250px;
 }
 </style>
