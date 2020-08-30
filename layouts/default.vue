@@ -4,7 +4,7 @@
     <Nuxt class="page-content"/>
     <div class="footer uk-section uk-section-primary">
       <div class="uk-container">
-        <div>
+        <div class="uk-padding">
           <p>
             *Yes it really is free to use. All we ask is that you acknowledge us as the owners of the IP and you provide a link to www.bowencode.com.au
             A number of commercial organisations have embraced the Bowen Code and provide ancillary products and services for a fee.
