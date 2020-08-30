@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="uk-section uk-light">
-      <div class="uk-container">
+    <div class="uk-section uk-section-primary uk-light header">
+      <div class="uk-container uk-text-center uk-flex uk-flex-center">
         <h1>
           Robert Bowen's<br/>
           <span>
@@ -33,6 +33,7 @@
               <p>
                 Robert has made the Bowen Code freely* available to the wine collecting public as his contribution to supporting the education and enjoyment of wine.
               </p>
+              <nuxt-link to="/TheBowenCode" class="uk-button uk-button-primary uk-width-expand">Find Out More</nuxt-link>
             </div>
           </div>
 
@@ -62,17 +63,25 @@
                 Wine I Am Making This Vintage
               </h4>
               <p>
-                Shifting from being simply a consumer of wine to a collector can be very rewarding. The challenge is how to get started.
+                Rob works collaboratively with a number of wineries across the key wine regions of Western Australia including, Margaret River, Mt Baker Pemberton and the Swan Valley.
               </p>
               <p>
-                Within this site Rob provides access to a range or industry backed resources and people that can start you on the journey of wine collection.
+                Each season presents it pleasant surprises and challenges. Follow Rob here and on social media to keep abreast of progress.
               </p>
-              <p>
-                From cost effective racking, online education services and of course the Bowen Code approach to wine collecting.
-              </p>
-              <p>
-                There is one golden rule when starting a cellar. "Buy more wine than you drink"
-              </p>
+              <div>
+                <div class="uk-grid-small uk-flex uk-flex-row" uk-grid>
+                  <div>
+                    <a href="https://www.facebook.com/CellarManagement/" target="_blank" title="facebook" class="uk-icon-link">
+                      <span class="uk-icon" uk-icon="icon: facebook"></span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.youtube.com/channel/UCHp-AubW8mN0Z5C59nA98sQ/videos?disable_polymer=1" target="_blank" title="youtube" class="uk-icon-link">
+                      <span class="uk-icon" uk-icon="icon: youtube"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -89,8 +98,16 @@ export default {
 </script>
 
 <style lang="scss">
-  h1 span {
-    font-size: 0.7em;
-    line-height: 1;
+h1 {
+  line-height: 0.7;
+
+  span {
+    font-size: 0.6em;
   }
+}
+
+.header {
+  max-height: 250px;
+  height: 250px;
+}
 </style>

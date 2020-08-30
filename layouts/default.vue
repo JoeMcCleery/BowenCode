@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-section-primary uk-preserve-color">
+  <div class="uk-section-default uk-preserve-color">
     <navbar />
     <Nuxt />
   </div>

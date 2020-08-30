@@ -1,5 +1,5 @@
 <template>
-    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+    <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-box-shadow-small; cls-inactive: ; top: 250;">
 
       <nav class="uk-navbar-container">
         <div class="uk-container uk-container-expand">
@@ -24,16 +24,20 @@
                 <nuxt-link to="/Blog">Blog</nuxt-link>
               </li>
 
-              <li>
-                <a href="https://www.facebook.com/CellarManagement/" target="_blank" title="facebook">
-                  <span class="uk-icon" uk-icon="icon: facebook"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UCHp-AubW8mN0Z5C59nA98sQ/videos?disable_polymer=1" target="_blank" title="youtube">
-                  <span class="uk-icon" uk-icon="icon: youtube"></span>
-                </a>
-              </li>
+              <div class="uk-navbar-item">
+                <div class="uk-grid-small uk-flex uk-flex-row" uk-grid>
+                  <div>
+                    <a href="https://www.facebook.com/CellarManagement/" target="_blank" title="facebook" class="uk-icon-link">
+                      <span class="uk-icon" uk-icon="icon: facebook"></span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.youtube.com/channel/UCHp-AubW8mN0Z5C59nA98sQ/videos?disable_polymer=1" target="_blank" title="youtube" class="uk-icon-link">
+                      <span class="uk-icon" uk-icon="icon: youtube"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
             </ul>
           </div>
