@@ -12,11 +12,14 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "uikit": "^3.5.7"
   },
   "devDependencies": {
     "@nuxtjs/stylelint-module": "^4.0.0",
+    "node-sass": "^4.14.1",
     "push-dir": "^0.4.1",
+    "sass-loader": "^10.0.1",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   }

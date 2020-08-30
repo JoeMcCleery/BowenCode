@@ -11,7 +11,7 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/BowenCode/'
+    base: '/'
   },
   /*
   ** Headers of the page
@@ -32,12 +32,15 @@ export default {
   ** Global CSS
   */
   css: [
+    // Main UIkit file
+    '~/assets/scss/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/uikit', ssr: false }
   ],
   /*
   ** Auto import components
@@ -61,5 +64,14 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    loaders:
+      {
+        vue: {
+          transformAssetUrls: {
+            img: "data-src",
+            div: "data-src"
+          }
+        }
+      }
   }
 }
