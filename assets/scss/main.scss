@@ -1,13 +1,14 @@
 // 1. Your custom variables and variable overwrites.
-$brand-colour: #b1a995;
-$brand-colour-i: #635c4a;
+$brand-colour: #a19988;
+$brand-colour-i: #938770;
 $brand-purple: #a782b0;
 $brand-purple-i: #604f63;
 $brand-teal: #82b0a0;
 
 $global-primary-background: $brand-purple-i;
-$global-default-background: $brand-colour;
-$section-default-background: $brand-colour;
+$global-default-background: $brand-colour-i;
+$section-default-background: $brand-colour-i;
+$global-secondary-background: $brand-colour;
 
 $offcanvas-bar-background: $brand-purple-i;
 $navbar-background: $brand-purple-i;

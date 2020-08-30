@@ -8,18 +8,26 @@
       </div>
     </div>
 
-    <div class="uk-section uk-light">
+    <div class="uk-section uk-section-default uk-light">
       <div class="uk-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+        <div class="uk-card uk-card-secondary uk-card-body">
+          <p>
+            Rob bowen is one of the best-known and celebrated winemakers in Western Australia. Rob has over 45 years'
+            experience with several of WA's leading wineries, including Houghton. In 2009 Rob commenced producing his own
+            branded wines. He joined forces with a team of viticulturists (led by David Radomilijac) who collectively
+            furnish the project with an extensive range of knowledge and expertise. Since this time the group have
+            produced some outstanding premium wines with a strong sense of place, all grapes hand-picked from the best
+            available vineyards in the Margaret River and Pemberton regions. Two core ranges of wines are produced: Robert
+            Bowen (from Margaret River and Pemberton) and Pemberley (from the Pemberley Farms Vineyard owned by David).
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'WhoIsRobertBowen'
-}
+  export default {
+    name: 'WhoIsRobertBowen'
+  }
 </script>
