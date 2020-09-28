@@ -15,12 +15,12 @@
     <div class="uk-section uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
-<!--          <h2 class="uk-card-title uk-text-center">Title</h2>-->
+          <h2 class="uk-card-title uk-text-center uk-margin-medium-bottom">BowenCode Goals</h2>
           <div class="uk-flex uk-flex-center uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
             <div>
               <div class="uk-card uk-card-primary uk-card-body">
                 <h4 class="uk-card-title">
-                  Helping People Enjoy Wine
+                  Enjoying Wine
                 </h4>
                 <p>
                   Celebrated Wine Maker Robert Bowen's simplified approach to wine collection and management.
@@ -69,7 +69,7 @@
             <div>
               <div class="uk-card uk-card-primary uk-card-body">
                 <h4 class="uk-card-title">
-                  Wine I Am Making This Vintage
+                  The Wine Making Process
                 </h4>
                 <p>
                   Rob works collaboratively with a number of wineries across the key wine regions of Western Australia
@@ -106,19 +106,6 @@
 
 <script>
   export default {
-    name: 'Home',
-    components: {
-      Footer: () => import('@/components/Footer')
-    }
+    name: 'Home'
   }
 </script>
-
-<style lang="scss" scoped>
-  h1 {
-    line-height: 0.7;
-
-    span {
-      font-size: 0.5em;
-    }
-  }
-</style>

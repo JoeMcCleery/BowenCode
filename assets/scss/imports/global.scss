@@ -1,0 +1,28 @@
+
+h1 {
+  line-height: 0.7;
+
+  span {
+    font-size: 0.5em;
+  }
+}
+
+#navbar,
+.uk-sticky-placeholder {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+.uk-navbar-container {
+  transition: box-shadow 0.25s, background-color 0.25s;
+}
+
+.page-content {
+  position: relative;
+  z-index: 998;
+}
+
+.header {
+  margin-top: -$navbar-nav-item-height;
+}

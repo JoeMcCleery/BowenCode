@@ -26,8 +26,6 @@ $navbar-nav-item-height: 80px;
 // 4. Import UIkit.
 @import "../../node_modules/uikit/src/scss/uikit-theme.scss";
 
-.page-enter-active,
-.page-leave-active { transition: opacity 0.25s; }
-
-.page-enter,
-.page-leave-active { opacity: 0; }
+// Other SCSS
+@import "imports/global";
+@import "imports/page-transition";

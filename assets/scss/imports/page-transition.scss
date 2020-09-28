@@ -1,0 +1,60 @@
+$page-animation: 0.5s;
+
+.page-enter-active,
+.page-leave-active {
+  transition: all $page-animation;
+
+  > * {
+    transition: opacity $page-animation ease-in-out;
+  }
+
+  .header {
+    transition: transform $page-animation ease-in-out;
+
+    h1 {
+      transition: opacity $page-animation ease-in-out;
+    }
+  }
+
+  .uk-card {
+    transition: transform $page-animation ease-in-out;
+  }
+}
+
+.page-enter {
+  > * {
+    opacity: 0;
+  }
+
+  .header {
+    opacity: 1;
+    transform: translateY(calc(-100% + #{$navbar-nav-item-height}));
+
+    h1 {
+      opacity: 0;
+    }
+  }
+
+  .uk-card {
+    transform: translateY(-80px);
+  }
+}
+
+.page-leave-active {
+  > * {
+    opacity: 0;
+  }
+
+  .header {
+    opacity: 1;
+    transform: translateY(calc(-100% + #{$navbar-nav-item-height}));
+
+    h1 {
+      opacity: 0;
+    }
+  }
+
+  .uk-card {
+    transform: translateY(80px);
+  }
+}
