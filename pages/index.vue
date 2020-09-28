@@ -116,3 +116,13 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  line-height: 0.7;
+
+  span {
+    font-size: 0.5em;
+  }
+}
+</style>
