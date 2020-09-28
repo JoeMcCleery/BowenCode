@@ -45,9 +45,9 @@
                           </a>
                         </div>
 
-                        <div class="uk-width-1-3 wine-type-colour" style="position: relative; top: -12px;">
+                        <div class="uk-width-1-3 wine-type-colour" style="position: relative; top: -12px; height: 38px;">
                           <a class="uk-flex uk-flex-column" uk-tooltip="Wine Type / Color">
-                            <span style="position: relative; top: 8px;">Char</span>
+                            <span style="position: relative; top: 7px;">Char</span>
                           </a>
                         </div>
                       </div>
