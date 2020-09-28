@@ -4,29 +4,31 @@
       <nav class="uk-navbar-container">
         <div class="uk-container uk-container-expand">
 
-          <div class="uk-hidden@m uk-light" uk-navbar>
+          <div class="uk-hidden@l uk-light" uk-navbar>
             <ul class="uk-navbar-nav uk-navbar-left">
               <a class="uk-navbar-toggle" href="" uk-toggle="target: #offcanvas;"><span uk-navbar-toggle-icon/><span class="uk-margin-small-left">Menu</span></a>
             </ul>
 
-            <div id="offcanvas" uk-offcanvas="overlay: true;">
+            <div ref="offcanvas" id="offcanvas" class="" uk-offcanvas="overlay: true; esc-close: true; bg-close: true; mode: slide;">
               <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close" type="button" href="#" uk-close></button>
                 <ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical">
-                  <nuxt-link to="/" class="uk-logo">The Bowen Code</nuxt-link>
-
-                  <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}">
+                  <li :class="{'uk-active': $nuxt.$route.name === 'index'}" @click="closeOffCanvas">
+                    <nuxt-link to="/" class="uk-logo">The Bowen Code</nuxt-link>
+                  </li>
+                  <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}" @click="closeOffCanvas">
                     <nuxt-link to="/WhoIsRobertBowen">Who is Robert Bowen?</nuxt-link>
                   </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}">
+                  <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}" @click="closeOffCanvas">
                     <nuxt-link to="/TheBowenCode">The Bowen Code</nuxt-link>
                   </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}">
+                  <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}" @click="closeOffCanvas">
                     <nuxt-link to="/Resources">Resources</nuxt-link>
                   </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}">
+                  <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}" @click="closeOffCanvas">
                     <nuxt-link to="/SayHi">Say Hi</nuxt-link>
                   </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}">
+                  <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}" @click="closeOffCanvas">
                     <nuxt-link to="/Blog">Blog</nuxt-link>
                   </li>
 
@@ -50,7 +52,7 @@
             </div>
           </div>
 
-          <div class="uk-visible@m uk-light" uk-navbar>
+          <div class="uk-visible@l uk-light" uk-navbar>
             <ul class="uk-navbar-nav uk-navbar-center">
 
               <nuxt-link to="/" class="uk-navbar-item uk-logo">The Bowen Code</nuxt-link>
@@ -96,8 +98,10 @@
 <script>
 export default {
   name: 'Navbar',
-  mounted() {
-    console.log(this.$nuxt.$route.name)
+  methods: {
+    closeOffCanvas() {
+      this.$uikit.offcanvas(this.$refs.offcanvas).hide()
+    }
   }
 }
 </script>
