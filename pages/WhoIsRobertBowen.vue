@@ -11,7 +11,8 @@
     <div class="uk-section uk-section-default uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
-          <p>
+          <h2 class="uk-card-title uk-margin-medium-bottom">About Rob</h2>
+          <p class="uk-card uk-card-primary uk-card-body">
             Rob bowen is one of the best-known and celebrated winemakers in Western Australia. Rob has over 45 years'
             experience with several of WA's leading wineries, including Houghton. In 2009 Rob commenced producing his own
             branded wines. He joined forces with a team of viticulturists (led by David Radomilijac) who collectively

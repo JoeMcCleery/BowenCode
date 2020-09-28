@@ -11,7 +11,7 @@
     <div class="uk-section uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
-          <h2 class="uk-card-title uk-text-center uk-margin-medium-bottom">Licensing And Use Of The Bowen Code</h2>
+          <h2 class="uk-card-title uk-margin-medium-bottom">Licensing And Use Of The Bowen Code</h2>
           <div class="uk-flex uk-flex-center uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
             <div>
               <div class="uk-card uk-card-primary uk-card-body">

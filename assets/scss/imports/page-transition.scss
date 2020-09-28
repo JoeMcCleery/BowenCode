@@ -17,7 +17,7 @@ $page-animation: 0.5s;
   }
 
   .uk-card {
-    transition: transform $page-animation ease-in-out;
+    transition: transform $page-animation linear;
   }
 }
 

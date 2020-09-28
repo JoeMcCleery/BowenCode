@@ -26,3 +26,21 @@ h1 {
 .header {
   margin-top: -$navbar-nav-item-height;
 }
+
+.rotate-clockwise {
+  transform: rotateZ(90deg);
+}
+
+.cut-here-line {
+  transform: rotateZ(45deg) translateX(20px) translateY(-15px);
+  float: right;
+  padding: 0 20px;
+
+  &::after {
+    content: '';
+    border: dashed 1px white;
+    height: 80px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+}

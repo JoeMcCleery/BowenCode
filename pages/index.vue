@@ -15,15 +15,15 @@
     <div class="uk-section uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
-          <h2 class="uk-card-title uk-text-center uk-margin-medium-bottom">BowenCode Goals</h2>
+          <h2 class="uk-card-title uk-margin-medium-bottom">At A Glance</h2>
           <div class="uk-flex uk-flex-center uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
             <div>
               <div class="uk-card uk-card-primary uk-card-body">
                 <h4 class="uk-card-title">
-                  Enjoying Wine
+                  Simplified Wine Management
                 </h4>
                 <p>
-                  Celebrated Wine Maker Robert Bowen's simplified approach to wine collection and management.
+                  Celebrated Wine Maker Robert Bowen, has developed a simplified approach to wine collection and management.
                 </p>
                 <p>
                   With the Bowen Code, Robert Bowen has managed to distill 45 years of wine making and collecting
