@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="uk-section uk-section-primary uk-light header">
       <div class="uk-container uk-text-center">
         <h1>
@@ -44,10 +45,9 @@
                           </a>
                         </div>
 
-                        <div class="uk-width-1-3">
-                          <a class="uk-flex uk-flex-column" uk-tooltip="Wine Type">
-                            <sup>Type</sup>
-                            <span>Char</span>
+                        <div class="uk-width-1-3 wine-type-colour" style="position: relative; top: -12px;">
+                          <a class="uk-flex uk-flex-column" uk-tooltip="Wine Type / Color">
+                            <span style="position: relative; top: 8px;">Char</span>
                           </a>
                         </div>
                       </div>
@@ -77,6 +77,9 @@
         </div>
       </div>
     </div>
+
+    <Footer />
+
   </div>
 </template>
 
@@ -84,6 +87,9 @@
 import Barcode from '@/assets/images/barcode.png'
 export default {
   name: 'TheBowenCode',
+  components: {
+    Footer: () => import('@/components/Footer')
+  },
   data() {
     return {
       Barcode

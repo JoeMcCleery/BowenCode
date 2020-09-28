@@ -2,10 +2,10 @@ $page-animation: 0.5s;
 
 .page-enter-active,
 .page-leave-active {
-  transition: all $page-animation;
+  transition-duration: $page-animation;
 
   > * {
-    transition: opacity $page-animation ease-in-out;
+    transition: opacity $page-animation ease-in-out, transform $page-animation ease-in-out;
   }
 
   .header {
@@ -43,6 +43,7 @@ $page-animation: 0.5s;
 .page-leave-active {
   > * {
     opacity: 0;
+    transform: translateY(80px);
   }
 
   .header {

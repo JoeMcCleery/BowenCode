@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="uk-section uk-section-primary uk-light header">
       <div class="uk-container uk-text-center">
         <h1>
@@ -21,11 +22,17 @@
         </div>
       </div>
     </div>
+
+    <Footer />
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SayHi'
+  name: 'SayHi',
+  components: {
+    Footer: () => import('@/components/Footer')
+  }
 }
 </script>

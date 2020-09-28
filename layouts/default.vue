@@ -2,7 +2,6 @@
   <div id="page-main" class="uk-section-default uk-preserve-color">
     <Navbar />
     <Nuxt class="page-content" />
-    <Footer />
   </div>
 </template>
 
@@ -10,8 +9,7 @@
 export default {
   name: 'Default',
   components: {
-    Navbar: () => import('@/components/Navbar'),
-    Footer: () => import('@/components/Footer')
+    Navbar: () => import('@/components/Navbar')
   }
 }
 </script>
