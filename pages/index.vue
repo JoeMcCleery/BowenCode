@@ -15,7 +15,7 @@
     <div class="uk-section uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
-          <h2 class="uk-card-title">Our Goals</h2>
+<!--          <h2 class="uk-card-title uk-text-center">Title</h2>-->
           <div class="uk-flex uk-flex-center uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
             <div>
               <div class="uk-card uk-card-primary uk-card-body">
@@ -79,7 +79,7 @@
                   Each season presents it pleasant surprises and challenges. Follow Rob here and on social media to keep
                   abreast of progress.
                 </p>
-                <div>
+                <div class="uk-margin">
                   <div class="uk-grid-small uk-flex uk-flex-row" uk-grid>
                     <div>
                       <a href="https://www.facebook.com/CellarManagement/" target="_blank" title="facebook"
@@ -106,7 +106,10 @@
 
 <script>
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      Footer: () => import('@/components/Footer')
+    }
   }
 </script>
 
@@ -115,7 +118,7 @@
     line-height: 0.7;
 
     span {
-      font-size: 0.6em;
+      font-size: 0.5em;
     }
   }
 </style>

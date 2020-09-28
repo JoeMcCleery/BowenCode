@@ -1,30 +1,17 @@
 <template>
   <div id="page-main" class="uk-section-default uk-preserve-color">
-    <navbar />
-    <Nuxt class="page-content"/>
-    <div class="footer uk-section uk-section-primary">
-      <div class="uk-container">
-        <div class="uk-padding">
-          <p>
-            *Yes it really is free to use. All we ask is that you acknowledge us as the owners of the IP and you provide a link to www.bowencode.com.au
-            A number of commercial organisations have embraced the Bowen Code and provide ancillary products and services for a fee.
-          </p>
-          <p>
-            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit
-            https://creativecommons.org/licenses/by-nd/4.0/legalcode
-          </p>
-        </div>
-      </div>
-    </div>
+    <Navbar />
+    <Nuxt class="page-content" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
 export default {
   name: 'Default',
   components: {
-    Navbar: Navbar
+    Navbar: () => import('@/components/Navbar'),
+    Footer: () => import('@/components/Footer')
   }
 }
 </script>

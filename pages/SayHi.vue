@@ -10,11 +10,11 @@
 
     <div class="uk-section uk-light">
       <div class="uk-container">
-        <div class="uk-card uk-card-secondary uk-card-body">
+        <div class="uk-card uk-card-secondary uk-card-body uk-width-large uk-text-center uk-margin-auto">
           <p>
-            Contact us via email:
-            <a href="mailto:contact@bowencode.com.au?subject=BowenCode%20Website%20Enquiry" title="Get in contact" class="uk-button uk-button-primary">Email</a>
+            Send us an Email:
           </p>
+          <a href="mailto:contact@bowencode.com.au?subject=BowenCode%20Website%20Enquiry" title="Send Email to contact@bowencode.com.au" class="uk-button uk-button-primary uk-button-small">contact@bowencode.com.au</a>
         </div>
       </div>
     </div>

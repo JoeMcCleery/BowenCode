@@ -14,22 +14,22 @@
                 <button class="uk-offcanvas-close" type="button" href="#" uk-close></button>
                 <ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical">
                   <li :class="{'uk-active': $nuxt.$route.name === 'index'}" @click="closeOffCanvas">
-                    <nuxt-link to="/" class="uk-logo">The Bowen Code</nuxt-link>
+                    <nuxt-link to="/" class="uk-logo" title="The Bowen Code">The Bowen Code</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}" @click="closeOffCanvas">
-                    <nuxt-link to="/WhoIsRobertBowen">Who is Robert Bowen?</nuxt-link>
+                    <nuxt-link to="/WhoIsRobertBowen" title="Who is Robert Bowen?">Who is Robert Bowen?</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}" @click="closeOffCanvas">
-                    <nuxt-link to="/TheBowenCode">The Bowen Code</nuxt-link>
+                    <nuxt-link to="/TheBowenCode" title="The Bowen Code">The Bowen Code</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}" @click="closeOffCanvas">
-                    <nuxt-link to="/Resources">Resources</nuxt-link>
+                    <nuxt-link to="/Resources" title="Resources">Resources</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}" @click="closeOffCanvas">
-                    <nuxt-link to="/SayHi">Say Hi</nuxt-link>
+                    <nuxt-link to="/SayHi" title="Say Hi">Say Hi</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}" @click="closeOffCanvas">
-                    <nuxt-link to="/Blog">Blog</nuxt-link>
+                    <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>
                   </li>
 
                   <div class="uk-position-bottom uk-margin">
@@ -55,22 +55,22 @@
           <div class="uk-visible@l uk-light" uk-navbar>
             <ul class="uk-navbar-nav uk-navbar-center">
 
-              <nuxt-link to="/" class="uk-navbar-item uk-logo">The Bowen Code</nuxt-link>
+              <nuxt-link to="/" class="uk-navbar-item uk-logo" title="The Bowen Code">The Bowen Code</nuxt-link>
 
               <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}">
-                <nuxt-link to="/WhoIsRobertBowen">Who is Robert Bowen?</nuxt-link>
+                <nuxt-link to="/WhoIsRobertBowen" title="Who is Robert Bowen?">Who is Robert Bowen?</nuxt-link>
               </li>
               <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}">
-                <nuxt-link to="/TheBowenCode">The Bowen Code</nuxt-link>
+                <nuxt-link to="/TheBowenCode" title="The Bowen Code">The Bowen Code</nuxt-link>
               </li>
               <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}">
-                <nuxt-link to="/Resources">Resources</nuxt-link>
+                <nuxt-link to="/Resources" title="Resources">Resources</nuxt-link>
               </li>
               <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}">
-                <nuxt-link to="/SayHi">Say Hi</nuxt-link>
+                <nuxt-link to="/SayHi" title="Say Hi">Say Hi</nuxt-link>
               </li>
               <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}">
-                <nuxt-link to="/Blog">Blog</nuxt-link>
+                <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>
               </li>
 
               <div class="uk-navbar-item">
