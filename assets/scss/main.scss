@@ -31,12 +31,10 @@ $container-padding-horizontal: 0;
 }
 
 @mixin hook-card-primary() {
-  border-bottom: darken($brand-purple-ii, 2%) 2px solid;
   background: linear-gradient(180deg, $brand-purple, $brand-purple-i);
 }
 
 @mixin hook-card-secondary() {
-  border-bottom: darken($brand-colour-ii, 2%) 2px solid;
   background: linear-gradient(180deg, $brand-colour, $brand-colour-i);
 }
 
