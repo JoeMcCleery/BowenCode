@@ -1,12 +1,12 @@
 <template>
-    <div id="navbar" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" >
+    <div id="navbar" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;" >
 
       <nav class="uk-navbar-container">
         <div class="uk-container uk-container-expand uk-margin-small-left uk-margin-small-right">
 
           <div class="uk-hidden@l uk-flex uk-flex-right uk-light" uk-navbar>
-            <ul class="uk-navbar-nav uk-navbar-right">
-              <a class="uk-navbar-toggle" href="" uk-toggle="target: #offcanvas;"><span uk-navbar-toggle-icon/><span class="uk-margin-small-left">Menu</span></a>
+            <ul class="uk-navbar-nav">
+              <a class="uk-navbar-toggle" href="" uk-toggle="target: #offcanvas;">Menu<span class="uk-margin-small-left" uk-navbar-toggle-icon></span></a>
             </ul>
 
             <div ref="offcanvas" id="offcanvas" class="" uk-offcanvas="overlay: true; esc-close: true; bg-close: true; mode: slide; flip: true;">

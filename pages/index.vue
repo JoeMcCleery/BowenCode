@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="uk-section uk-section-primary uk-light header">
+    <div class="uk-section uk-light header">
       <div class="uk-container uk-text-center">
         <h1>
           Robert Bowen's<br/>
@@ -39,7 +39,7 @@
                   Robert has made the Bowen Code freely* available to the wine collecting public as his contribution to
                   supporting the education and enjoyment of wine.
                 </p>
-                <nuxt-link to="/TheBowenCode" class="uk-button uk-button-primary uk-width-expand">Find Out More
+                <nuxt-link to="/TheBowenCode" class="uk-button uk-button-primary uk-width-expand uk-margin-top">Find Out More
                 </nuxt-link>
               </div>
             </div>
