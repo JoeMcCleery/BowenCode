@@ -1,23 +1,20 @@
 // 1. Your custom variables and variable overwrites.
+$white: #fff;
+
 $brand-colour-i: #938770;
-$brand-colour: lighten($brand-colour-i, 2%);
-$brand-colour-ii: darken($brand-colour-i, 2%);
+$brand-colour: lighten($brand-colour-i, 5%);
+$brand-colour-ii: darken($brand-colour-i, 5%);
 $brand-purple-i: #604f63;
-$brand-purple: lighten($brand-purple-i, 2%);
-$brand-purple-ii: darken($brand-purple-i, 1%);
-$brand-teal: #4c8475;
-$brand-teal-i: #82b0a0;
+$brand-purple: lighten($brand-purple-i, 5%);
 
 $global-primary-background: $brand-purple-i;
-$global-default-background: $brand-colour-ii;
+$global-default-background: $white;
 $section-default-background: $brand-colour-ii;
 $global-secondary-background: $brand-colour;
 
 $offcanvas-bar-background: $brand-purple;
 $navbar-background: $brand-purple;
 $navbar-nav-item-height: 80px;
-
-$white: #fff;
 
 $container-padding-horizontal: 0;
 
@@ -31,11 +28,11 @@ $container-padding-horizontal: 0;
 }
 
 @mixin hook-card-primary() {
-  background: linear-gradient(180deg, $brand-purple, $brand-purple-i);
+  background: linear-gradient(-45deg, $brand-purple, $brand-purple-i);
 }
 
 @mixin hook-card-secondary() {
-  background: linear-gradient(180deg, $brand-colour, $brand-colour-i);
+  background: linear-gradient(-45deg, $brand-colour, $brand-colour-i);
 }
 
 // 4. Import UIkit.

@@ -37,7 +37,7 @@ body,
   color: $white;
   height: 450px;
   margin-top: -$navbar-nav-item-height;
-  background: linear-gradient(180deg, $brand-purple, $brand-purple-i);
+  background: linear-gradient(-45deg, $brand-purple, $brand-purple-i);
 
   h1 {
     font-weight: bold;
@@ -52,8 +52,7 @@ body,
 }
 
 .footer {
-  font-size: 0.8rem;
-  background: linear-gradient(180deg, $brand-purple, $brand-purple-i);
+  background: linear-gradient(-45deg, $brand-purple, $brand-purple-i);
 }
 
 #navbar,
