@@ -28,14 +28,12 @@
                   </li>
                   <li>
                     <p>
-                      <b>Adapt</b> — remix, transform, and build upon the material
-                      for any purpose, even commercially.
+                      <b>Adapt</b> — remix, transform, and build upon the material for any purpose, even commercially.
                     </p>
                   </li>
                   <li>
                     <p>
-                      The licensor cannot revoke these freedoms as long as you follow
-                      the license terms.
+                      The licensor cannot revoke these freedoms as long as you follow the license terms.
                     </p>
                   </li>
                 </ul>
@@ -77,20 +75,14 @@
 
                 <ul class="uk-list uk-list-divider">
                   <li>
-                    <p>You do not have to comply with the license for elements of the
-                      material in the public domain or where your use is permitted by an applicable <span>
-                  <a href="https://creativecommons.org/licenses/by-nd/4.0/#"
-                     target="_blank"
-                     title="creative commons - exception or limitation" class="uk-link-text">exception or limitation</a></span>.
+                    <p>You do not have to comply with the license for elements of the material in the public domain or
+                      where your use is permitted by an applicable exception or limitation.
                     </p>
                   </li>
                   <li>
-                    <p>No warranties are given. The license may not give you all of the
-                      permissions necessary for your intended use. For example, other rights such as <span><a
-                        href="https://creativecommons.org/licenses/by-nd/4.0/#"
-                        target="_blank" title="creative commons - publicity, privacy, or moral rights"
-                        class="uk-link-text">publicity, privacy, or moral rights</a></span>
-                      may limit how you use the material.</p>
+                    <p>No warranties are given. The license may not give you all of the permissions necessary for your
+                      intended use. For example, other rights such as publicity, privacy, or moral rights may limit how
+                      you use the material.</p>
                   </li>
                 </ul>
               </div>
@@ -116,7 +108,7 @@
       </div>
     </div>
 
-    <Footer />
+    <Footer/>
 
   </div>
 </template>
