@@ -3,7 +3,7 @@
 
     <div class="uk-section uk-light header">
       <div class="uk-container uk-text-center">
-        <h1>
+        <h1 class="uk-padding-small">
           Who Is Robert Bowen
         </h1>
       </div>

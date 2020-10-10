@@ -3,7 +3,7 @@
 
     <div class="uk-section uk-light header">
       <div class="uk-container uk-text-center">
-        <h1>
+        <h1 class="uk-padding-small">
           About The Bowen Code
         </h1>
       </div>
