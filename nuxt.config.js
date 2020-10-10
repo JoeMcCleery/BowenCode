@@ -28,6 +28,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  loading: {
+    color: 'white'
+  },
   /*
   ** Global CSS
   */
