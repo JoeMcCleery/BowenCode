@@ -1,5 +1,5 @@
 <template>
-    <div id="navbar" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;" >
+    <div id="navbar" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-box-shadow-small; cls-inactive: uk-navbar-transparent;" >
 
       <nav class="uk-navbar-container">
         <div class="uk-container uk-container-expand uk-margin-small-left uk-margin-small-right">
