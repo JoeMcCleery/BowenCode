@@ -11,7 +11,7 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/BowenCode/'
+    base: '/'
   },
   /*
   ** Headers of the page
