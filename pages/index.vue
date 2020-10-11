@@ -2,11 +2,11 @@
   <div>
 
     <div class="uk-section uk-light header">
-      <div class="uk-container uk-text-center">
+      <div class="uk-container uk-text-center uk-flex uk-flex-column">
         <h1 class="uk-padding-small">
-          Robert Bowen's<br/>
+          BowenCode<br/>
           <span>
-            Free to use*<br/>
+            Robert Bowen's free to use*<br/>
             Cellar Management System
           </span>
         </h1>

@@ -4,9 +4,10 @@
       <nav class="uk-navbar-container">
         <div class="uk-container uk-container-expand uk-margin-small-left uk-margin-small-right">
 
-          <div class="uk-hidden@l uk-flex uk-flex-right uk-light" uk-navbar>
-            <ul class="uk-navbar-nav">
-              <a class="uk-navbar-toggle" href="" uk-toggle="target: #offcanvas;">Menu<span class="uk-margin-small-left" uk-navbar-toggle-icon></span></a>
+          <div class="uk-hidden@l uk-flex uk-flex-between uk-light" uk-navbar>
+            <span class="uk-navbar-item uk-logo">{{title}}</span>
+            <ul class="uk-navbar-nav uk-nav">
+              <a class="uk-navbar-toggle" href="" uk-toggle="target: #offcanvas;"><span class="uk-margin-small-left" uk-navbar-toggle-icon></span></a>
             </ul>
 
             <div ref="offcanvas" id="offcanvas" class="" uk-offcanvas="overlay: true; esc-close: true; bg-close: true; mode: slide; flip: true;">
@@ -14,23 +15,23 @@
                 <button class="uk-offcanvas-close" type="button" href="#" uk-close></button>
                 <ul class="uk-nav uk-nav-default uk-nav-center uk-margin-auto-vertical">
                   <li :class="{'uk-active': $nuxt.$route.name === 'index'}" @click="closeOffCanvas">
-                    <nuxt-link to="/" class="uk-logo" title="The Bowen Code">BowenCode</nuxt-link>
-                  </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}" @click="closeOffCanvas">
-                    <nuxt-link to="/WhoIsRobertBowen" title="Who is Robert Bowen?">Who is Robert Bowen</nuxt-link>
+                    <nuxt-link to="/" class="uk-logo" title="Home">Home</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}" @click="closeOffCanvas">
-                    <nuxt-link to="/TheBowenCode" title="The Bowen Code">About The Bowen Code</nuxt-link>
+                    <nuxt-link to="/TheBowenCode" title="The BowenCode">The Bowen Code</nuxt-link>
+                  </li>
+                  <li :class="{'uk-active': $nuxt.$route.name === 'AboutRob'}" @click="closeOffCanvas">
+                    <nuxt-link to="/AboutRob" title="About Rob">About Rob</nuxt-link>
                   </li>
                   <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}" @click="closeOffCanvas">
                     <nuxt-link to="/Resources" title="Resources">Resources</nuxt-link>
                   </li>
-                  <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}" @click="closeOffCanvas">
-                    <nuxt-link to="/SayHi" title="Say Hi">Say Hi</nuxt-link>
+                  <li :class="{'uk-active': $nuxt.$route.name === 'ContactUs'}" @click="closeOffCanvas">
+                    <nuxt-link to="/ContactUs" title="Contact Us">Contact Us</nuxt-link>
                   </li>
-<!--                  <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}" @click="closeOffCanvas">-->
-<!--                    <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>-->
-<!--                  </li>-->
+                  <li :class="{'uk-active': $nuxt.$route.name === 'Blog' || $nuxt.$route.name === 'Blog-slug' }" @click="closeOffCanvas">
+                    <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>
+                  </li>
 
                   <div class="uk-position-bottom uk-margin">
                     <div class="uk-grid-small uk-flex uk-flex-row uk-flex uk-flex-center" uk-grid>
@@ -54,24 +55,22 @@
 
           <div class="uk-visible@l uk-light" uk-navbar>
             <ul class="uk-navbar-nav uk-navbar-center">
-
-              <nuxt-link to="/" class="uk-navbar-item uk-logo" title="The Bowen Code">BowenCode</nuxt-link>
-
-              <li :class="{'uk-active': $nuxt.$route.name === 'WhoIsRobertBowen'}">
-                <nuxt-link to="/WhoIsRobertBowen" title="Who is Robert Bowen?">Who is Robert Bowen</nuxt-link>
-              </li>
+              <nuxt-link to="/" class="uk-navbar-item uk-logo" title="Home">Home</nuxt-link>
               <li :class="{'uk-active': $nuxt.$route.name === 'TheBowenCode'}">
-                <nuxt-link to="/TheBowenCode" title="The Bowen Code">About The Bowen Code</nuxt-link>
+                <nuxt-link to="/TheBowenCode" title="The Bowen Code">The Bowen Code</nuxt-link>
+              </li>
+              <li :class="{'uk-active': $nuxt.$route.name === 'AboutRob'}">
+                <nuxt-link to="/AboutRob" title="About Rob">About Rob</nuxt-link>
               </li>
               <li :class="{'uk-active': $nuxt.$route.name === 'Resources'}">
                 <nuxt-link to="/Resources" title="Resources">Resources</nuxt-link>
               </li>
-              <li :class="{'uk-active': $nuxt.$route.name === 'SayHi'}">
-                <nuxt-link to="/SayHi" title="Say Hi">Say Hi</nuxt-link>
+              <li :class="{'uk-active': $nuxt.$route.name === 'ContactUs'}">
+                <nuxt-link to="/ContactUs" title="Contact Us">Contact Us</nuxt-link>
               </li>
-<!--              <li :class="{'uk-active': $nuxt.$route.name === 'Blog'}">-->
-<!--                <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>-->
-<!--              </li>-->
+              <li :class="{'uk-active': $nuxt.$route.name === 'Blog' || $nuxt.$route.name === 'Blog-slug' }">
+                <nuxt-link to="/Blog" title="Blog">Blog</nuxt-link>
+              </li>
 
               <div class="uk-navbar-item">
                 <div class="uk-grid-small uk-flex uk-flex-row" uk-grid>
@@ -101,7 +100,23 @@ export default {
   methods: {
     closeOffCanvas() {
       this.$uikit.offcanvas(this.$refs.offcanvas).hide()
+    },
+    getArticleTitle() {
+      const article = this.$content('articles', params.slug).fetch()
+
+      return article.title
     }
-  }
+  },
+  computed: {
+    title() {
+      return this.$route.path === '/' ? 'Home' : this.formattedName
+    },
+    formattedName() {
+      if(this.$route.name === 'Blog-slug') {
+        return 'Blog Article'
+      }
+      return this.$route.name.split(/(?=[A-Z])/).join(" ")
+    }
+  },
 }
 </script>

@@ -11,7 +11,8 @@ $page-animation: 0.5s;
   .header {
     transition: transform $page-animation ease-in-out;
 
-    h1 {
+    h1,
+    a {
       transition: opacity $page-animation ease-in-out;
     }
   }
@@ -30,7 +31,8 @@ $page-animation: 0.5s;
     opacity: 1;
     transform: translateY(calc(-100% + #{$navbar-nav-item-height}));
 
-    h1 {
+    h1,
+    a {
       opacity: 0;
     }
   }
@@ -50,7 +52,8 @@ $page-animation: 0.5s;
     opacity: 1;
     transform: translateY(calc(-100% + #{$navbar-nav-item-height}));
 
-    h1 {
+    h1,
+    a {
       opacity: 0;
     }
   }

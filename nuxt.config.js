@@ -1,3 +1,13 @@
+const createSitemapRoutes = async () => {
+  let routes = [], articles = [];
+  const { $content } = require('@nuxt/content')
+  if (articles.length === 0)
+    articles = await $content('articles').fetch();
+  for (const article of articles) {
+    routes.push(`Blog/${article.slug}`);
+  }
+  return routes;
+}
 
 export default {
   /*
@@ -57,12 +67,28 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxt/content',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap'
   ],
+  content: {
+    // Options
+    nestedProperties: ['articles.slug']
+  },
+  googleAnalytics: {
+    id: 'UA-180176943-1'
+  },
+  sitemap: {
+    hostname: 'https://bowencode.com.au',
+    gzip: true,
+    routes: createSitemapRoutes
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

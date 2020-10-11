@@ -33,7 +33,7 @@
 
 <script>
   export default {
-    name: 'WhoIsRobertBowen',
+    name: 'AboutRob',
     components: {
       Footer: () => import('@/components/Footer')
     }

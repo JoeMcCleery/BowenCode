@@ -4,7 +4,7 @@
     <div class="uk-section uk-light header">
       <div class="uk-container uk-text-center">
         <h1 class="uk-padding-small">
-          About The Bowen Code
+          The Bowen Code
         </h1>
       </div>
     </div>
@@ -135,7 +135,7 @@
 import Barcode from '@/assets/images/barcode.png'
 
 export default {
-  name: 'TheBowenCode',
+  name: 'AboutTheBowenCode',
   components: {
     Footer: () => import('@/components/Footer')
   },
