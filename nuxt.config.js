@@ -33,7 +33,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'BowenCode Wine Management System' },
-      { name: 'google-site-verification', content: 'mHGmjLTPo8Ah0dJyYA1uBGkSH8wPPyAVXuJ8rkhY42c' }
+      { name: 'google-site-verification', content: 'wF-RgMjo_93gqBQsRt-eSBoGlug0BW2o1xxvuyXY7s8' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
