@@ -105,6 +105,9 @@ export default {
       const article = this.$content('articles', params.slug).fetch()
 
       return article.title
+    },
+    capitalize(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
     }
   },
   computed: {
@@ -113,7 +116,7 @@ export default {
     },
     formattedName() {
       if(this.$route.name === 'Blog-slug') {
-        return 'Blog Article'
+        return this.$route.params.slug.replaceAll('-', " ").split(' ').map(this.capitalize).join(' ');
       }
       return this.$route.name.split(/(?=[A-Z])/).join(" ")
     }

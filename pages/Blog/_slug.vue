@@ -6,8 +6,15 @@
         <h1 class="uk-padding-small">
           {{ article.title }}
         </h1>
-        <p>{{ createdDate }}</p>
-        <nuxt-link to="/Blog" title="Back to Blog Home" class="uk-button uk-button-small uk-button-default"><span uk-icon="chevron-left"/>Back</nuxt-link>
+        <div>
+          <p>
+            {{ createdDate }}
+          </p>
+          <nuxt-link to="/Blog" title="Back to Blog Home" class="uk-button uk-button-small uk-button-default">
+            <span uk-icon="chevron-left"/>
+            Back to Blog
+          </nuxt-link>
+        </div>
       </div>
     </div>
 
@@ -15,7 +22,7 @@
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
           <h2>{{ article.title }}</h2>
-          <div class="uk-card uk-card-primary uk-card-body">
+          <div class="blog-post uk-card uk-card-primary uk-card-body">
             <nuxt-content :document="article" />
           </div>
         </div>

@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="uk-section uk-section-default uk-light">
+    <div class="uk-section uk-light">
       <div class="uk-container">
         <div class="uk-card uk-card-secondary uk-card-body">
           <h2 class="uk-card-title uk-margin-medium-bottom">About Rob</h2>

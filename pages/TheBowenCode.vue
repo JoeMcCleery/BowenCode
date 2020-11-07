@@ -61,7 +61,7 @@
                   <a uk-tooltip="BowenCode URL" class="uk-flex uk-flex-center no-select">Bowencode.com.au</a>
 
                   <a uk-tooltip="Hole for bottle neck"
-                     class="uk-flex uk-flex-center uk-flex-middle uk-margin uk-height-small uk-width-small uk-margin-auto uk-background-secondary no-select"
+                     class="hole uk-flex uk-flex-center uk-flex-middle uk-margin uk-height-small uk-width-small uk-margin-auto uk-background-secondary no-select"
                      style="border-radius: 50%;"></a>
 
                   <div class="uk-grid-small uk-grid-match" uk-grid>

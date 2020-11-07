@@ -68,7 +68,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/google-analytics'
+    '@aceforth/nuxt-optimized-images',
   ],
   /*
   ** Nuxt.js modules
@@ -78,13 +78,22 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/sitemap'
   ],
+
   content: {
     // Options
-    nestedProperties: ['articles.slug']
+    nestedProperties: ['articles.slug'],
+    liveEdit: true
   },
+
   googleAnalytics: {
     id: 'UA-180176943-1'
   },
+
+  optimizedImages: {
+    optimizeImages: true,
+    optimizeImagesInDev: true
+  },
+
   sitemap: {
     hostname: 'https://bowencode.com.au',
     gzip: true,

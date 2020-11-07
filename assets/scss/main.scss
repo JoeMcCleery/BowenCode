@@ -18,21 +18,53 @@ $navbar-nav-item-height: 80px;
 
 $container-padding-horizontal: 0;
 
+$border-radius: 3px;
+
 // 2. Import default variables and available mixins.
 @import "@/node_modules/uikit/src/scss/variables-theme.scss";
 @import "@/node_modules/uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
 @mixin hook-offcanvas-bar() {
-  @extend .uk-box-shadow-small;
+  @extend .uk-box-shadow-large;
+}
+
+@mixin hook-icon() {
+  transition: color 0.2s ease, fill 0.2s ease;
+}
+
+@mixin hook-close() {
+  transition: color 0.2s ease, fill 0.2s ease;
+}
+
+@mixin hook-navbar-toggle() {
+  transition: color 0.2s ease, fill 0.2s ease;
+}
+
+@mixin hook-button() {
+  border-radius: $border-radius;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+@mixin hook-card() {
+  border-radius: $border-radius;
+
+  h2 {
+    @extend .uk-text-bold;
+    @extend .uk-margin-medium-bottom;
+  }
 }
 
 @mixin hook-card-primary() {
   background: linear-gradient(-45deg, $brand-purple, $brand-purple-i);
+
+  @extend .uk-box-shadow-large;
 }
 
 @mixin hook-card-secondary() {
   background: linear-gradient(-45deg, $brand-colour, $brand-colour-i);
+
+  @extend .uk-box-shadow-large;
 }
 
 // 4. Import UIkit.

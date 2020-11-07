@@ -19,9 +19,11 @@
 
           <div v-if="articles.length" class="uk-card uk-card-primary uk-card-body uk-margin-large-top">
             <h3>Articles</h3>
-            <div v-for="article in articles" :key="article.slug">
-              <nuxt-link :to="'Blog/' + article.slug">{{prettyDate(article.createdAt)}} - {{article.title}}</nuxt-link>
-            </div>
+            <ul v-for="article in articles" :key="article.slug" class="uk-list uk-list-bullet">
+              <li>
+                <nuxt-link :to="'Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{prettyDate(article.createdAt)}}</small></nuxt-link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
