@@ -1,4 +1,4 @@
-const createSitemapRoutes = async () => {
+const websiteRoutes = async () => {
   let routes = [], articles = [];
   const { $content } = require('@nuxt/content')
   if (articles.length === 0)
@@ -20,8 +20,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'static',
-  router: {
-    base: '/'
+
+  generate: {
+    routes: websiteRoutes
   },
   /*
   ** Headers of the page
@@ -97,7 +98,7 @@ export default {
   sitemap: {
     hostname: 'https://bowencode.com.au',
     gzip: true,
-    routes: createSitemapRoutes
+    routes: websiteRoutes
   },
   /*
   ** Build configuration
