@@ -21,7 +21,7 @@
             <h3>Articles</h3>
             <ul v-for="article in articles" :key="article.slug" class="uk-list uk-list-bullet">
               <li>
-                <nuxt-link :to="'Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{formattedDate(article.publishDate)}}</small></nuxt-link>
+                <nuxt-link :to="'/Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{formattedDate(article.publishDate)}}</small></nuxt-link>
               </li>
             </ul>
           </div>
