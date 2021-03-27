@@ -23,7 +23,8 @@ export default {
   target: 'static',
 
   generate: {
-    routes: websiteRoutes
+    routes: websiteRoutes,
+    fallback: true
   },
   /*
   ** Headers of the page
@@ -69,8 +70,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/stylelint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -89,11 +89,6 @@ export default {
 
   googleAnalytics: {
     id: 'UA-180176943-1'
-  },
-
-  optimizedImages: {
-    optimizeImages: true,
-    optimizeImagesInDev: true
   },
 
   sitemap: {

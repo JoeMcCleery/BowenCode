@@ -1,5 +1,5 @@
 <template>
-  <div id="page-main" class="uk-section-default uk-preserve-color" uk-parallax="bgy: 1%">
+  <div id="page-main" class="uk-section-default uk-preserve-color">
     <Navbar />
     <Nuxt class="page-content" />
   </div>
