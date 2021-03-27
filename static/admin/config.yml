@@ -6,7 +6,7 @@ media_folder: "static/staticAssets/uploads"
 public_folder: "/staticAssets/uploads"
 
 collections:
-  - name: 'blog'
+  - name: 'Blog'
     label: 'Blog'
     folder: 'content/articles'
     format: 'frontmatter'
