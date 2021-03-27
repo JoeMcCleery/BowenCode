@@ -1,6 +1,8 @@
 ---
 title: Starting a Home Cellar
-description: Shifting from being simply a consumer of wine to a collector can be very rewarding
+description: Shifting from being simply a consumer of wine to a collector can be
+  very rewarding
+publishDate: 2021-03-27T03:58:30.833Z
 ---
 
 Shifting from being simply a consumer of wine to a collector can be very rewarding.
