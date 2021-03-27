@@ -9,8 +9,7 @@
     "generate": "nuxt generate",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "npm run lint:style",
-    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
-    "build:generate": "npm run build && npm run generate"
+    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.9.0",
