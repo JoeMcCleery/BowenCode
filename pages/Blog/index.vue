@@ -21,7 +21,7 @@
             <h3>Articles</h3>
             <ul v-for="article in articles" :key="article.slug" class="uk-list uk-list-bullet">
               <li>
-                <nuxt-link :to="'Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{prettyDate(article.createdAt)}}</small></nuxt-link>
+                <nuxt-link :to="'Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{formattedDate(article.publishDate)}}</small></nuxt-link>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ export default {
   },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
-    const articles = await $content('articles').sortBy('createdAt').fetch()
+    const articles = await $content('articles').sortBy('publishDate').fetch()
 
     return {
       page,
@@ -50,7 +50,7 @@ export default {
     }
   },
   methods: {
-    prettyDate(date) {
+    formattedDate(date) {
       return new Date(date).toDateString()
     }
   }

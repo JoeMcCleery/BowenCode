@@ -8,7 +8,7 @@
         </h1>
         <div>
           <p>
-            {{ createdDate }}
+            {{ formattedDate }}
           </p>
           <nuxt-link to="/Blog" title="Back to Blog Home" class="uk-button uk-button-small uk-button-default">
             <span uk-icon="chevron-left"/>
@@ -48,8 +48,8 @@ export default {
     }
   },
   computed: {
-    createdDate() {
-      return new Date(this.article.createdAt).toDateString()
+    formattedDate() {
+      return new Date(this.article.publishDate).toDateString()
     }
   },
   head() {
