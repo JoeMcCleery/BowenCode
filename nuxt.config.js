@@ -58,7 +58,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/uikit', ssr: false }
+    { src: '~/plugins/uikit', ssr: false },
+    { src: '~/plugins/netlify-cms', ssr: false }
   ],
   /*
   ** Auto import components
