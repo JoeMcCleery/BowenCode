@@ -10,11 +10,6 @@ const websiteRoutes = async () => {
 }
 
 export default {
-  /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
-  mode: 'spa',
   ssr: false,
   /*
   ** Nuxt target
@@ -27,7 +22,7 @@ export default {
   },
 
   router: {
-    mode: 'history'
+    mode: 'hash'
   },
   /*
   ** Headers of the page
@@ -43,9 +38,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    script: [
-      { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
     ]
   },
 
