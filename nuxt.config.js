@@ -18,11 +18,12 @@ export default {
   target: 'static',
 
   generate: {
-    routes: websiteRoutes
+    routes: websiteRoutes,
+    fallback: true
   },
 
   router: {
-    mode: 'hash'
+    mode: 'history'
   },
   /*
   ** Headers of the page
