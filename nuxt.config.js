@@ -23,8 +23,11 @@ export default {
   target: 'static',
 
   generate: {
-    routes: websiteRoutes,
-    fallback: true
+    routes: websiteRoutes
+  },
+
+  router: {
+    mode: 'history'
   },
   /*
   ** Headers of the page
