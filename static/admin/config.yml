@@ -18,6 +18,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "publishDate", widget: "datetime"}
-      - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
-      - {label: "Featured Post", name: "featured", widget: "boolean", default: false}
+      - {label: "Enabled", name: "enabled", required: false, widget: "boolean", default: true}
+      - {label: "Featured Post", name: "featured", required: false, widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
