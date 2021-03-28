@@ -23,7 +23,10 @@
         <div class="uk-card uk-card-secondary uk-card-body">
           <h2>{{ article.title }}</h2>
           <div class="blog-post uk-card uk-card-primary uk-card-body">
-            <nuxt-content :document="article" />
+            <nuxt-content v-if="article.enabled" :document="article" />
+            <div v-else>
+              <p>Article is currently disabled</p>
+            </div>
           </div>
         </div>
       </div>

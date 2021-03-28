@@ -20,7 +20,7 @@
           <div v-if="articles.length" class="uk-card uk-card-primary uk-card-body uk-margin-large-top">
             <h3>Articles</h3>
             <ul v-for="article in articles" :key="article.slug" class="uk-list uk-list-bullet">
-              <li>
+              <li v-if="article.enabled">
                 <nuxt-link :to="'/Blog/' + article.slug" class="uk-link-text"><b>{{article.title}}</b><br/><small>{{formattedDate(article.publishDate)}}</small></nuxt-link>
               </li>
             </ul>
